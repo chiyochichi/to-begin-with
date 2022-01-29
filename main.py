@@ -27,5 +27,5 @@ if len(encoded) < 2001:
 	print(encoded)
 else:
 	print("Oh no! Your message is quite big. I saved it to output.txt")
-	with open('output.txt', 'a+', encoding='UTF-8') as f:
+	with open('output.txt', 'w+', encoding='UTF-8') as f:
 		f.write(encoded)
